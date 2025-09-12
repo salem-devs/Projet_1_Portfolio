@@ -121,7 +121,6 @@
     display: none;
 }
 
-
 @media screen and (max-width: 600px) {
     @media screen and (max-width: 300px) 
     {
@@ -139,6 +138,12 @@
         text-decoration: none;
     }
 
+    /* .menu {
+        display: none;
+    } 
+    .img_menu{
+        display: block;
+    }*/
     .header_container{
         display: flex;
         flex-direction: column;
@@ -149,7 +154,14 @@
         align-items: center;
         gap: 20px;
     }
-    
+    /* .name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px  ;
+        /* border: solid black 1px; 
+        width: 100%;
+    } */
     .main_contain{
         padding-right: 50px;
         display: flex;
