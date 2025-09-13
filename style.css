@@ -204,6 +204,47 @@
         align-items: center;
         gap: 10px;
     }
+}
 
+/********************/
+/* PAGE PROJETS ICI */
+/********************/
 
+.contain{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    /* border: solid black 1px; */
+
+}
+
+contain h3{
+    margin-left: 10%;
+    /* margin-right: 10%; */
+
+}
+.projet_contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    /* border: solid black 1px; */
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 24px;
+}
+.projet_contain img{
+    /* width: 450px;
+    height: 300px;  */
+    width: 390.33px;
+    height: 258.33px;
+    /* border: solid black 1px; */
+}
+
+.titre_cache{
+    display: none;
 }
