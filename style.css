@@ -238,8 +238,7 @@ contain h3{
     line-height: 24px;
 }
 .projet_contain img{
-    /* width: 450px;
-    height: 300px;  */
+    
     width: 390.33px;
     height: 258.33px;
     /* border: solid black 1px; */
@@ -247,74 +246,4 @@ contain h3{
 
 .titre_cache{
     display: none;
-}
-
-/* REPONSIVE DESIGN POUR PROJETS.HTML  */
-@media screen and (max-width: 600px) {
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        list-style-type: none;
-        text-decoration: none;
-        color: black;
-        /* background-color: turquoise; */
-    }
-    .info h4{
-        display: none;
-    }
-    .titre_cache{
-        display: block;
-        padding: 0 10px;
-        margin-top: 10%;
-        margin-bottom: 5%;
-    }
-    .contain{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 5%;
-        margin-top: 2%;
-        /* padding: 0px; */
-        border: solid black 1px;
-        /* margin: 0 5px; */
-        /* padding: 5px; */
-    }
-    .projet_contain {
-        box-sizing: border-box;
-        flex-direction: column-reverse; /* empile les éléments */
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-left: 1px;
-        padding-right: 1px; 
-        /* margin: 0 20px; */
-        border: solid rgb(206, 27, 27) 1px;
-                /* width: 100%; */
-
-        /* gap: 10px  ; */
-    }
-
-    /* Ordre forcé : h4 > img > p */
-    .projet_contain .info {
-        order: 1;
-    }
-
-    .projet_contain img {
-        /* box-sizing: border-box; */
-        order: 2;
-        width: 100%;
-        height: auto;
-        /* display: block; */
-        /* margin: 0 10px; */
-        /* padding: 0 10px; */
-        /* border: solid black 1px; */
-    }
-
-    .projet_contain p {
-        box-sizing: border-box;
-        order: 3;
-        width: 100%;
-    }
 }
