@@ -206,107 +206,52 @@
     }
 }
 
+/********************/
+/* PAGE PROJETS ICI */
+/********************/
 
-/********************/
-/* PAGE Contact ICI */
-/********************/
-.contact_contain{
+.contain{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    /* border: solid black 1px; */
+
+}
+
+contain h3{
+    margin-left: 10%;
+    /* margin-right: 10%; */
+
+}
+.projet_contain{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    /* gap: 20px; */
+    align-items: center;
+    gap: 30px;
+    width: 80%;
     /* border: solid black 1px; */
-    margin-top: 50px;
-    margin-bottom: 10%;
-}
-.contact_box{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     margin-left: 10%;
     margin-right: 10%;
-    /* margin-top: 5%; */
-    margin-bottom: 7%;
-    /* border: solid rgb(250, 0, 0) 1px; */
+    line-height: 24px;
 }
-.contact_text{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.projet_contain img{
+    /* width: 450px;
+    height: 300px;  */
+    width: 390.33px;
+    height: 258.33px;
     /* border: solid black 1px; */
 }
-form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 25px;
-      width: 500px;
-      /* border: solid black 1px; */
-      /* margin-left: 10%; */
-      margin-right: 10%;  
 
-    }
+.titre_cache{
+    display: none;
+}
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      min-width: 155px;
-    }
-
-    label {
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-
-    input, textarea {
-      padding: 8px;
-      border: 1px solid #333;
-      /* border-radius: 3px; */
-      font-size: 14px;
-    }
-
-    textarea {
-      resize: none;
-      min-height: 100px;
-    }
-
-    .taille_max {
-      /* flex-basis: 40px; */
-      width: 500px;
-      /* border: solid black 1px; */
-      /* height: 130px; */
-    }
-
-    .btn-container {
-      display: flex;
-      align-items:last baseline;
-      justify-content: center;
-      flex: 1;
-      padding: 0px;
-      margin: 0px;
-          /* border: solid rgb(240, 213, 9) 2px; */
-    }
-
-    button {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      border: none;
-      background-color: orange;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 90px;
-      padding-bottom: 0;
-      margin: 0;
-      margin-bottom: 0;
-      border: solid rgb(0, 0, 0) 1px;
-
-    }
-    /*Responsive pour contact.html*/
-    @media screen and (max-width: 600px) {
-        * {
+/* REPONSIVE DESIGN POUR PROJETS.HTML  */
+@media screen and (max-width: 600px) {
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -315,31 +260,61 @@ form {
         color: black;
         /* background-color: turquoise; */
     }
-
-    .contact_contain{
+    .info h4{
+        display: none;
+    }
+    .titre_cache{
+        display: block;
+        padding: 0 10px;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .contain{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
-        margin-bottom: 10%;
-        padding: 0 10px;
+        gap: 10px;
+        margin-bottom: 5%;
+        margin-top: 2%;
+        /* padding: 0px; */
+        border: solid black 1px;
+        /* margin: 0 5px; */
+        /* padding: 5px; */
     }
-    .contact_box{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        margin-bottom: 7%;
-        /* border: solid rgb(250, 0, 0) 1px; */
-        width: 100%;
+    .projet_contain {
+        box-sizing: border-box;
+        flex-direction: column-reverse; /* empile les éléments */
         align-items: center;
         text-align: center;
+        justify-content: center;
+        padding-left: 1px;
+        padding-right: 1px; 
+        /* margin: 0 20px; */
+        border: solid rgb(206, 27, 27) 1px;
+                /* width: 100%; */
+
+        /* gap: 10px  ; */
     }
-    form{
+
+    /* Ordre forcé : h4 > img > p */
+    .projet_contain .info {
+        order: 1;
+    }
+
+    .projet_contain img {
+        /* box-sizing: border-box; */
+        order: 2;
         width: 100%;
-        gap: 15px;
+        height: auto;
+        /* display: block; */
+        /* margin: 0 10px; */
+        /* padding: 0 10px; */
         /* border: solid black 1px; */
-        margin: 0;
-        padding: 0;
-    }        
+    }
+
+    .projet_contain p {
+        box-sizing: border-box;
+        order: 3;
+        width: 100%;
+    }
 }
