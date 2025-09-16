@@ -209,6 +209,7 @@
 }
 
 
+
 /********************/
 /* PAGE CV ICI */
 /********************/
@@ -258,6 +259,10 @@
 }
 
 }
+
+
+
+
 form {
       display: flex;
       flex-wrap: wrap;
@@ -296,7 +301,8 @@ form {
     .taille_max {
       /* flex-basis: 40px; */
       width: 500px;
-      
+      /* border: solid black 1px; */
+      /* height: 130px; */
     }
 
     .btn-container {
@@ -307,6 +313,7 @@ form {
       padding: 0px;
       margin: 0px;
           /* border: solid rgb(240, 213, 9) 2px; */
+
     }
 
     button {
@@ -322,6 +329,52 @@ form {
       padding-bottom: 0;
       margin: 0;
       margin-bottom: 0;
-      border: solid rgb(0, 0, 0) 1px;
+        border: solid rgb(0, 0, 0) 1px;
 
     }
+
+    @media screen and (max-width: 600px) {
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        /* background-color: turquoise; */
+    }
+
+    .contact_contain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 20px; */
+        /* border: solid black 1px; */
+        margin-top: 20px;
+        margin-bottom: 10%;
+        padding: 0 10px;
+    }
+    .contact_box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* margin-left: 10%; */
+        /* margin-right: 10%; */
+        /* margin-top: 5%; */
+        margin-bottom: 7%;
+        /* border: solid rgb(250, 0, 0) 1px; */
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    form{
+        width: 100%;
+        gap: 15px;
+        /* border: solid black 1px; */
+        margin: 0;
+        padding: 0;
+
+    }
+
+        
+}
