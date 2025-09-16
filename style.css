@@ -274,8 +274,7 @@ form {
     .taille_max {
       /* flex-basis: 40px; */
       width: 500px;
-      /* border: solid black 1px; */
-      /* height: 130px; */
+      
     }
 
     .btn-container {
