@@ -328,10 +328,10 @@ form {
 .contain{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin-bottom: 5%;
-    margin-top: 2%;
-    /* border: solid black 1px; */
+    gap: 10px;
+    margin-bottom: 7%; /*Bon code*/
+    /* margin-top: 1%; */
+    border: solid black 2px;
 
 }
 
@@ -345,14 +345,19 @@ contain h3{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 1px;
     width: auto;
-    /* border: solid black 1px; */
+    border: solid rgb(188, 28, 28) 1px;
     margin-left: 10%;
     margin-right: 10%;
-    /* margin-top: 5%; */
-    /* margin-bottom: 7%; */
+    margin-top: 5%;
+    margin-bottom: 1%;
     line-height: 24px;
+}
+.projet_contain img{
+    width: 450px;
+    height: auto;
+    /* border: solid black 1px; */
 }
 
 .titre_cache{
