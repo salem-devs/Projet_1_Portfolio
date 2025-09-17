@@ -333,8 +333,52 @@ form {
 
     }
 
-    @media screen and (max-width: 600px) {
-        * {
+    
+/********************/
+/* PAGE PROJETS ICI */
+/********************/
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 7%; /*Bon code*/
+    /* margin-top: 1%; */
+    border: solid black 2px;
+
+}
+
+contain h3{
+    margin-left: 10%;
+    
+
+}
+.projet_contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+    width: auto;
+    border: solid rgb(188, 28, 28) 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    line-height: 24px;
+}
+.projet_contain img{
+    width: 450px;
+    height: auto;
+    /* border: solid black 1px; */
+}
+
+.titre_cache{
+    display: none;
+}
+/* Responsive mobile projets */
+@media screen and (max-width: 600px) {
+    * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
