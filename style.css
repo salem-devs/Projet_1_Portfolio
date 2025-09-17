@@ -337,7 +337,7 @@ form {
 
 contain h3{
     margin-left: 10%;
-    /* margin-right: 10%; */
+    
 
 }
 .projet_contain{
@@ -363,7 +363,7 @@ contain h3{
 .titre_cache{
     display: none;
 }
-/* Responsive mobile */
+/* Responsive mobile projets */
 @media screen and (max-width: 600px) {
     * {
         padding: 0;
