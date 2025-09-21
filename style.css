@@ -100,6 +100,16 @@
     /* margin-left: 10px; */
 }
 
+.foot_divider-in{
+    width: 100%;           /* largeur de la ligne */
+    height: 1px;         /* hauteur de la ligne */
+    background-color: rgb(202, 202, 202); 
+    margin: 0 auto; 
+    padding: 0 100px;
+    /* border: solid rgb(0, 0, 0) 1px; */
+    /* margin-left: 10px; */
+}
+
 .contacter_moi{
     display: flex;
     flex-direction: row;
