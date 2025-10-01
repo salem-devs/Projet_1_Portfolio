@@ -563,7 +563,8 @@ contain h3{
     /* background-color: aliceblue; */
 }
 .info p{
-    font-size: 14px;
+    font-family: 'Poppins';
+    font-size: 0.89rem;
     /* border: solid black 1px; */
     width: 320px;
     text-align: justify;
